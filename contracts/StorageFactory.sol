@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.19;
 
-import {SimpleStorage, SimpleStorage2 } from "./Simplestorage.sol";
+import {SimpleStorage} from "./Simplestorage.sol";
 
 contract StorageFactory{
 
@@ -14,8 +14,13 @@ contract StorageFactory{
     }
 
     function sfStore(uint256 _simpleStorgaeIndex, uint256 _newSimpleStorageNumber) public {
-        
+        SimpleStorage mySimpleStorage = listOfsimpleStorage[_simpleStorgaeIndex];
+        mySimpleStorage.store(_newSimpleStorageNumber);
+    }
 
+    function sfGet(uint256 _simpleStorgaeIndex) public view returns(uint256){
+        SimpleStorage mySimpleStorage = listOfsimpleStorage[_simpleStorgaeIndex];
+        return mySimpleStorage.retrieve();
     }
 
 }

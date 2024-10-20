@@ -30,6 +30,43 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorgaeIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "sfGet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorgaeIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newSimpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -68,11 +105,11 @@
 			]
 		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x9bf52955f82f8e9e0476cfd138f2c8816b3070b531850cd3eb389a96a0b40424",
+			"keccak256": "0xc9b447ca3cf5e1db633341c6042236a702754071e81cf93303ac8c40471d325b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7cec498b8dc7e70dfdc4cebe0ba93943d27768222b482658db0002f62c4df69e",
-				"dweb:/ipfs/Qma19tKY5C9khuEcBm3CiAB8tuS7j37Bh2ZbidQmAKLeb2"
+				"bzz-raw://06e170b8bded6e180e62bce326a5a14fa1fe5e0aa577bc1d57c74a8d7b963f1f",
+				"dweb:/ipfs/QmSqja58TkVCbHVx9hXoA2S1NUpyphc7iyf3SkeXfgYFi4"
 			]
 		}
 	},

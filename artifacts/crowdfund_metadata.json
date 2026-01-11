@@ -11,6 +11,19 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -50,6 +63,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "withdrawal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -82,11 +102,11 @@
 	},
 	"sources": {
 		"contracts/crowdfund.sol": {
-			"keccak256": "0xe2fcaf2b809eb207b42f5b41e6ffdc27f265f6ad5b1f4845a6b3d00453eba102",
+			"keccak256": "0xdb6fdb2939aef85b09cb68f1e82c94fb394e996f1027b31fac6db3306bacf8c9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://05eb97bdaeaa85dbe92b5d50073614de23a26e18ba6a0c6c3f786c91b8052355",
-				"dweb:/ipfs/QmPt9pwX8eFqWrxFhYhCnGx9VbPj2shhscuCZVSZ5Y8V5c"
+				"bzz-raw://3f0ff2e9b1ee93f09076a27a9f745690fbd2e62775346b2ff7f8ddcf2e32d329",
+				"dweb:/ipfs/QmaLZNxdwr1mZZbmQ2bHjEsoiUcze8W2nUAki7Zn7z1fwX"
 			]
 		}
 	},

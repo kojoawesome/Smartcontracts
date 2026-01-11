@@ -10,11 +10,29 @@ contract crowdfund{
         owner = msg.sender;
     }
 
+    //Generic contract reciever
     receive() external payable { 
         balances[msg.sender] += msg.value;
     }
 
+    //checks for accounts contributed
     function contribute () external payable {
          balances[msg.sender] += msg.value;
     }
+
+    //Returns balance of contract
+    function balance()public view returns (uint256){
+       return address(this).balance;
+    }
+
+   //ownerModifier
+   modifier onlyOwner{
+    require(msg.sender == owner, "Sender is not Owner");
+    _;
+   }
+
+   //Withdraw
+   function withdrawal() public onlyOwner {
+    (bool sent, ) = msg.sender.call{value: address(this).balance}("");
+   }
 }
